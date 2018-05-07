@@ -1,0 +1,4 @@
+---
+# defaults file for skype-install
+
+serv_skype_uninstall: no

@@ -1,0 +1,10 @@
+---
+# tasks file for skype-install
+
+- name: install skype
+  win_package:
+    path: http://10.150.8.100/Skype-8.19.0.1.exe
+    state: present
+    product_id: auto
+    arguments: /S /VERYSILENT
+ 

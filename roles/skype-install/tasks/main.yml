@@ -1,0 +1,18 @@
+---
+# tasks file for skype-install
+- name: create directory skype
+  win_file:
+     path: c:\temps\skype
+     state: directory
+- name: download file setup
+  win_get_url:
+    url: "{{url}}"
+    dest: c:\temps\skype\{{version}}
+    force: yes
+- name: install skype
+  win_package:
+    path: c:\temps\skype\{{version}}
+    state: present
+    product_id: auto
+    arguments: /S /VERYSILENT /restart
+ 
