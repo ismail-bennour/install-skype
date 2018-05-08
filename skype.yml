@@ -1,3 +1,4 @@
+---
 - hosts: ismail
   vars_prompt:
    - name: "version skype (3"
