@@ -1,11 +1,7 @@
 ---
-- hosts: ismail
+- hosts: allhost
   vars_prompt:
-<<<<<<< HEAD
-   - name: "version skype 4"
-=======
-   - name: "version skype (3"
->>>>>>> 5ccb5b1466552e40dbc5a2bcba397fa3ef7f4c7b
+   - name: "version"
      prompt: "quel version Skype voulez-vous installer?"
      private: no
    - name: "url"
