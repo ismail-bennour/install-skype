@@ -1,5 +1,5 @@
 ---
-- hosts: allhosts
+- hosts: all
   vars_prompt:
    - name: "version"
      prompt: "quel version Skype voulez-vous installer?"
